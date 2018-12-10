@@ -1,0 +1,2253 @@
+2018-12-09 08:31:28 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: password_2 in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php:34
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(34): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/k...', 34, Array)
+#1 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionRegister()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('register', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/r...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-09 08:31:27 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'nik' => '1409627154298709'
+    'password_1' => '12345678'
+    'password_2' => '12345678'
+    'nama' => 'Iqbal Mard'
+    'tempat_lahir' => 'Pekanbaru'
+    'tanggal_lahir' => '1990-01-01'
+    'jk' => 'L'
+    'alamat' => 'Jl. Merpati Sakti
+Gg. Amal'
+    'agama' => 'Islam'
+    'status_kawin' => 'Belum Kawin'
+    'pekerjaan' => 'Mahasiswa'
+    'kewarganegaraan' => 'WNI'
+    'foto' => '1409627154298709.jpg'
+    'no_hp' => '081345678910'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '260ebe9c-f410-49d0-9501-ddad11da7911'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '297'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '48808'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/register'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/register'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544344287.962
+    'REQUEST_TIME' => 1544344287
+]
+2018-12-09 12:20:33 [::1][-][-][error][Error] Error: Undefined class constant 'FOMAT_JSON' in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php:12
+Stack trace:
+#0 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLogin()
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#7 {main}
+2018-12-09 12:20:33 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '6800a673-602b-4689-9e94-0d714fec03dc'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '38'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '53150'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/login'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544358033.398
+    'REQUEST_TIME' => 1544358033
+]
+2018-12-09 12:20:41 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\web\Request::format in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(12): yii\base\Component->__set('format', 'json')
+#1 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLogin()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-09 12:20:41 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '49957efe-f781-4a68-9f02-fbf589c7e738'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '38'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '53186'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/login'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544358041.681
+    'REQUEST_TIME' => 1544358041
+]
+2018-12-09 12:20:53 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\Application::requset in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/di/ServiceLocator.php(77): yii\base\Component->__get('requset')
+#1 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(16): yii\di\ServiceLocator->__get('requset')
+#2 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLogin()
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#9 {main}
+2018-12-09 12:20:53 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '1128ae32-77ad-418d-94ef-4d814378630b'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '38'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '53240'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/login'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544358053.573
+    'REQUEST_TIME' => 1544358053
+]
+2018-12-09 12:21:02 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: ersponse in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php:38
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(38): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/k...', 38, Array)
+#1 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLogin()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-09 12:21:02 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '43fea198-c0da-4acd-a3ae-d081befeb0fc'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '38'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '53282'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/login'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544358062.987
+    'REQUEST_TIME' => 1544358062
+]
+2018-12-09 13:17:41 [::1][-][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: myLat, myLng, jarak in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('lihat-teknisi-t...', Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#6 {main}
+2018-12-09 13:17:41 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '9cf4282c-a61d-4770-99a4-f6521d7198fb'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '40094'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/lihat-teknisi-terdekat'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/lihat-teknisi-terdekat'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544361461.349
+    'REQUEST_TIME' => 1544361461
+]
+2018-12-09 13:21:13 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE status_akun = 'Aktif'' at line 7 in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT tb_tekni...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(118): yii\db\Command->queryAll()
+#4 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLihatTeknisiTerdekat('0.425361', '101.659863', '100')
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('lihat-teknisi-t...', Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#11 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE status_akun = 'Aktif'' at line 7
+The SQL being executed was: SELECT tb_teknisi.id_teknisi, tb_teknisi.email, tb_teknisi.nama_toko, tb_teknisi.nama_pemilik, tb_teknisi.nik_pemilik, tb_teknisi.layanan, tb_teknisi.alamat, tb_teknisi.no_hp, tb_teknisi.lat, tb_teknisi.lng, tb_teknisi.foto,(((acos(sin(('0.425361'*pi()/180)) 
+                    * sin((`lat`*pi()/180))+cos(('0.425361'*pi()/180)) 
+                    * cos((`lat`*pi()/180)) * cos((('101.659863'- `lng`) 
+                    * pi()/180))))*180/pi())*60*1.1515*1.609344) 
+                    as jarak FROM `tb_teknisi` 
+                    HAVING jarak <= 100
+                    WHERE status_akun = 'Aktif' in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT tb_tekni...')
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT tb_tekni...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(118): yii\db\Command->queryAll()
+#4 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLihatTeknisiTerdekat('0.425361', '101.659863', '100')
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('lihat-teknisi-t...', Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE status_akun = 'Aktif'' at line 7
+)
+
+2018-12-09 13:21:13 [::1][-][-][info][application] $_GET = [
+    'myLat' => '0.425361'
+    'myLng' => '101.659863'
+    'jarak' => '100'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '109e3b6b-a127-4f04-a120-778887667e1a'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '40968'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/lihat-teknisi-terdekat'
+    'REDIRECT_QUERY_STRING' => 'myLat=0.425361&myLng=101.659863&jarak=100'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'myLat=0.425361&myLng=101.659863&jarak=100'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/lihat-teknisi-terdekat?myLat=0.425361&myLng=101.659863&jarak=100'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544361673.394
+    'REQUEST_TIME' => 1544361673
+]
+2018-12-09 13:22:45 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE status_akun = 'Aktif'' at line 8 in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT tb_tekni...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(119): yii\db\Command->queryAll()
+#4 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLihatTeknisiTerdekat('0.425361', '101.659863', '100')
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('lihat-teknisi-t...', Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#11 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE status_akun = 'Aktif'' at line 8
+The SQL being executed was: SELECT tb_teknisi.id_teknisi, tb_teknisi.email, tb_teknisi.nama_toko, tb_teknisi.nama_pemilik, tb_teknisi.nik_pemilik, tb_teknisi.layanan, tb_teknisi.alamat, tb_teknisi.no_hp, tb_teknisi.lat, tb_teknisi.lng, tb_teknisi.foto,
+                    (((acos(sin(('0.425361'*pi()/180)) 
+                    * sin((`lat`*pi()/180))+cos(('0.425361'*pi()/180)) 
+                    * cos((`lat`*pi()/180)) * cos((('101.659863'- `lng`) 
+                    * pi()/180))))*180/pi())*60*1.1515*1.609344) 
+                    as jarak FROM `tb_teknisi` 
+                    HAVING jarak <= 100 AND
+                    WHERE status_akun = 'Aktif' in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT tb_tekni...')
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT tb_tekni...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(119): yii\db\Command->queryAll()
+#4 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLihatTeknisiTerdekat('0.425361', '101.659863', '100')
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('lihat-teknisi-t...', Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE status_akun = 'Aktif'' at line 8
+)
+
+2018-12-09 13:22:44 [::1][-][-][info][application] $_GET = [
+    'myLat' => '0.425361'
+    'myLng' => '101.659863'
+    'jarak' => '100'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'd36244aa-be77-4ed3-bf32-43768dd429b7'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '41348'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/lihat-teknisi-terdekat'
+    'REDIRECT_QUERY_STRING' => 'myLat=0.425361&myLng=101.659863&jarak=100'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'myLat=0.425361&myLng=101.659863&jarak=100'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/lihat-teknisi-terdekat?myLat=0.425361&myLng=101.659863&jarak=100'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544361764.997
+    'REQUEST_TIME' => 1544361764
+]
+2018-12-09 13:22:56 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status_akun' in 'having clause' in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT tb_tekni...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(118): yii\db\Command->queryAll()
+#4 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLihatTeknisiTerdekat('0.425361', '101.659863', '100')
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('lihat-teknisi-t...', Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#11 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status_akun' in 'having clause'
+The SQL being executed was: SELECT tb_teknisi.id_teknisi, tb_teknisi.email, tb_teknisi.nama_toko, tb_teknisi.nama_pemilik, tb_teknisi.nik_pemilik, tb_teknisi.layanan, tb_teknisi.alamat, tb_teknisi.no_hp, tb_teknisi.lat, tb_teknisi.lng, tb_teknisi.foto,
+                    (((acos(sin(('0.425361'*pi()/180)) 
+                    * sin((`lat`*pi()/180))+cos(('0.425361'*pi()/180)) 
+                    * cos((`lat`*pi()/180)) * cos((('101.659863'- `lng`) 
+                    * pi()/180))))*180/pi())*60*1.1515*1.609344) 
+                    as jarak FROM `tb_teknisi` 
+                    HAVING jarak <= 100 AND status_akun = 'Aktif' in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT tb_tekni...')
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT tb_tekni...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(118): yii\db\Command->queryAll()
+#4 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLihatTeknisiTerdekat('0.425361', '101.659863', '100')
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('lihat-teknisi-t...', Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'status_akun' in 'having clause'
+)
+
+2018-12-09 13:22:56 [::1][-][-][info][application] $_GET = [
+    'myLat' => '0.425361'
+    'myLng' => '101.659863'
+    'jarak' => '100'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'd12124de-bf21-4ba6-851e-2d5f4512d164'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '41396'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/lihat-teknisi-terdekat'
+    'REDIRECT_QUERY_STRING' => 'myLat=0.425361&myLng=101.659863&jarak=100'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'myLat=0.425361&myLng=101.659863&jarak=100'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/lihat-teknisi-terdekat?myLat=0.425361&myLng=101.659863&jarak=100'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544361776.378
+    'REQUEST_TIME' => 1544361776
+]
+2018-12-09 13:23:24 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tb_teknisi.status_akun' in 'having clause' in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT tb_tekni...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(118): yii\db\Command->queryAll()
+#4 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLihatTeknisiTerdekat('0.425361', '101.659863', '100')
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('lihat-teknisi-t...', Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#11 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tb_teknisi.status_akun' in 'having clause'
+The SQL being executed was: SELECT tb_teknisi.id_teknisi, tb_teknisi.email, tb_teknisi.nama_toko, tb_teknisi.nama_pemilik, tb_teknisi.nik_pemilik, tb_teknisi.layanan, tb_teknisi.alamat, tb_teknisi.no_hp, tb_teknisi.lat, tb_teknisi.lng, tb_teknisi.foto,
+                    (((acos(sin(('0.425361'*pi()/180)) 
+                    * sin((`lat`*pi()/180))+cos(('0.425361'*pi()/180)) 
+                    * cos((`lat`*pi()/180)) * cos((('101.659863'- `lng`) 
+                    * pi()/180))))*180/pi())*60*1.1515*1.609344) 
+                    as jarak FROM `tb_teknisi` 
+                    HAVING jarak <= 100 AND tb_teknisi.status_akun = 'Aktif' in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT tb_tekni...')
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT tb_tekni...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/MasyarakatController.php(118): yii\db\Command->queryAll()
+#4 [internal function]: app\api\modules\v1\controllers\MasyarakatController->actionLihatTeknisiTerdekat('0.425361', '101.659863', '100')
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('lihat-teknisi-t...', Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/masyarakat/l...', Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'tb_teknisi.status_akun' in 'having clause'
+)
+
+2018-12-09 13:23:24 [::1][-][-][info][application] $_GET = [
+    'myLat' => '0.425361'
+    'myLng' => '101.659863'
+    'jarak' => '100'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'b7c3e5fa-68b0-472d-88ce-02baae553dd7'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '41526'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/lihat-teknisi-terdekat'
+    'REDIRECT_QUERY_STRING' => 'myLat=0.425361&myLng=101.659863&jarak=100'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'myLat=0.425361&myLng=101.659863&jarak=100'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/masyarakat/lihat-teknisi-terdekat?myLat=0.425361&myLng=101.659863&jarak=100'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544361804.369
+    'REQUEST_TIME' => 1544361804
+]
+2018-12-09 16:02:16 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/teknisi/registrasi in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('registrasi', Array)
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/teknisi/regi...', Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#2 {main}
+2018-12-09 16:02:16 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'nana_toko' => 'Dinal Dinamo'
+    'nama_pemilik' => 'Radinal Dwiki N'
+    'nik_pemilik' => '14019786756453421'
+    'password' => '12345678'
+    'layanan' => 'ac, mesin cuci, kulkas'
+    'alamat' => 'Jl. Taman Karya'
+    'no_hp' => '081231425364'
+    'lat' => '0.466030'
+    'lng' => '101.355510'
+    'siu' => '14019786756453421.pdf'
+    'foto' => '14019786756453421.jpg'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '00600b39-1fd4-4199-b99e-cfb601175265'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '273'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '48696'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/teknisi/registrasi'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/teknisi/registrasi'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544371336.488
+    'REQUEST_TIME' => 1544371336
+]
+2018-12-09 16:02:32 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/teknisi/registrasi in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('registrasi', Array)
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/teknisi/regi...', Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#2 {main}
+2018-12-09 16:02:32 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'nana_toko' => 'Dinal Dinamo'
+    'nama_pemilik' => 'Radinal Dwiki N'
+    'nik_pemilik' => '14019786756453421'
+    'password' => '12345678'
+    'layanan' => 'ac, mesin cuci, kulkas'
+    'alamat' => 'Jl. Taman Karya'
+    'no_hp' => '081231425364'
+    'lat' => '0.466030'
+    'lng' => '101.355510'
+    'siu' => '14019786756453421.pdf'
+    'foto' => '14019786756453421.jpg'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '7a461977-10ff-4bb9-886e-3868b02a6bd2'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '273'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '48764'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/teknisi/registrasi'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/teknisi/registrasi'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544371352.184
+    'REQUEST_TIME' => 1544371352
+]
+2018-12-09 16:03:16 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/teknisi/registrasi in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('registrasi', Array)
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/teknisi/regi...', Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#2 {main}
+2018-12-09 16:03:16 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'nana_toko' => 'Dinal Dinamo'
+    'nama_pemilik' => 'Radinal Dwiki N'
+    'nik_pemilik' => '14019786756453421'
+    'password' => '12345678'
+    'layanan' => 'ac, mesin cuci, kulkas'
+    'alamat' => 'Jl. Taman Karya'
+    'no_hp' => '081231425364'
+    'lat' => '0.466030'
+    'lng' => '101.355510'
+    'siu' => '14019786756453421.pdf'
+    'foto' => '14019786756453421.jpg'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'c02f19d7-f993-4d1d-b8cc-a6496cc80b91'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '273'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '48960'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/teknisi/registrasi'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/teknisi/registrasi'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544371396.571
+    'REQUEST_TIME' => 1544371396
+]
+2018-12-09 16:04:24 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: nama_toko in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/TeknisiController.php:51
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/TeknisiController.php(51): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/k...', 51, Array)
+#1 [internal function]: app\api\modules\v1\controllers\TeknisiController->actionRegister()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('register', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/teknisi/regi...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-09 16:04:24 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'nana_toko' => 'Dinal Dinamo'
+    'nama_pemilik' => 'Radinal Dwiki N'
+    'nik_pemilik' => '14019786756453421'
+    'password' => '12345678'
+    'layanan' => 'ac, mesin cuci, kulkas'
+    'alamat' => 'Jl. Taman Karya'
+    'no_hp' => '081231425364'
+    'lat' => '0.466030'
+    'lng' => '101.355510'
+    'siu' => '14019786756453421.pdf'
+    'foto' => '14019786756453421.jpg'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '49565719-2b9f-45e1-9164-fa71edc3709b'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '273'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '49240'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/teknisi/register'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/teknisi/register'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544371464.08
+    'REQUEST_TIME' => 1544371464
+]
+2018-12-10 01:19:36 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: response in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php:39
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(39): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/k...', 39, Array)
+#1 [internal function]: app\api\modules\v1\controllers\PemesananController->actionAdd()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('add', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/ad...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-10 01:19:36 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '7e1f71b4-59a5-4958-b332-9c53a70b7993'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '304'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '43296'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/add'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/add'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544404776.721
+    'REQUEST_TIME' => 1544404776
+]
+2018-12-10 01:28:07 [::1][-][-][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Setting read-only property: yii\web\Application::response in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Component.php:206
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(84): yii\base\Component->__set('response', 'json')
+#1 [internal function]: app\api\modules\v1\controllers\PemesananController->actionDelete()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/de...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-10 01:28:07 [::1][-][-][info][application] $_GET = [
+    'id_pemesanan' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'b3869b60-5535-4fbe-ba49-2780032213d9'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '45370'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/delete'
+    'REDIRECT_QUERY_STRING' => 'id_pemesanan=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id_pemesanan=2'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/delete?id_pemesanan=2'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544405287.815
+    'REQUEST_TIME' => 1544405287
+]
+2018-12-10 01:28:24 [::1][-][-][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Setting read-only property: yii\web\Application::response in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Component.php:206
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(84): yii\base\Component->__set('response', 'json')
+#1 [internal function]: app\api\modules\v1\controllers\PemesananController->actionDelete()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/de...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-10 01:28:24 [::1][-][-][info][application] $_GET = [
+    'id_pemesanan' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '2fd668e3-90fe-428e-b18f-535fef1a1954'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '45442'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/delete'
+    'REDIRECT_QUERY_STRING' => 'id_pemesanan=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id_pemesanan=2'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/delete?id_pemesanan=2'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544405304.662
+    'REQUEST_TIME' => 1544405304
+]
+2018-12-10 01:28:40 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: id_pemesanan in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php:89
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(89): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/k...', 89, Array)
+#1 [internal function]: app\api\modules\v1\controllers\PemesananController->actionDelete()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/de...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-10 01:28:40 [::1][-][-][info][application] $_GET = [
+    'id_pemesanan' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '29eaac8f-e577-4a66-919a-40cd9954b187'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '45510'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/delete'
+    'REDIRECT_QUERY_STRING' => 'id_pemesanan=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id_pemesanan=2'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/delete?id_pemesanan=2'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544405320.829
+    'REQUEST_TIME' => 1544405320
+]
+2018-12-10 01:29:15 [::1][-][-][error][Error] Error: Call to a member function delete() on null in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php:95
+Stack trace:
+#0 [internal function]: app\api\modules\v1\controllers\PemesananController->actionDelete()
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/de...', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#7 {main}
+2018-12-10 01:29:15 [::1][-][-][info][application] $_GET = [
+    'id_pemesanan' => '2'
+]
+
+$_POST = [
+    'id_pemesanan' => '2'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '65d40219-77b6-4f72-8ef5-cab267d291c3'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '45664'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/delete'
+    'REDIRECT_QUERY_STRING' => 'id_pemesanan=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id_pemesanan=2'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/delete?id_pemesanan=2'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544405355.984
+    'REQUEST_TIME' => 1544405355
+]
+2018-12-10 01:39:14 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Creating default object from empty value in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php:137
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(137): yii\base\ErrorHandler->handleError(2, 'Creating defaul...', '/var/www/html/k...', 137, Array)
+#1 [internal function]: app\api\modules\v1\controllers\PemesananController->actionUpdateProses()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update-proses', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/up...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-10 01:39:14 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'id_pemesanan' => '2'
+    'proses' => 'Dikerjakan'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '6cdc0da3-cec4-48b4-8796-c52fab3263d5'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '32'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '48090'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/update-proses'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/update-proses'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544405954.046
+    'REQUEST_TIME' => 1544405954
+]
+2018-12-10 01:42:52 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: nik in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php:58
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(58): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/k...', 58, Array)
+#1 [internal function]: app\api\modules\v1\controllers\PemesananController->actionUpdate()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/up...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-10 01:42:52 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'id_pemesanan' => '3'
+    'ket' => 'Rincian biaya :
+1. Motor kipas = Rp 130.000
+2. Kabel = Rp 20.000
+3. Ongkos pasang = Rp 100.000'
+    'biaya' => '250000'
+    'proses' => 'Selesai'
+    'foto_sesudah' => '3_post.jpg'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'd71ac092-3a99-4ad8-8a25-bddb42beaeb2'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '211'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '48980'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/update'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544406172.363
+    'REQUEST_TIME' => 1544406172
+]
+2018-12-10 01:52:57 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/pemesanan/view-by-nik in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-by-nik', Array)
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#2 {main}
+2018-12-10 01:52:57 [::1][-][-][info][application] $_GET = [
+    'jni' => ''
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__tawkuuid' => 'e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt DBdn39YP3csb::2'
+    '_csrf' => 'dcf38661e6f3cb338325ae19b6fa3833f548b130ac3a5fd9ae09b8c368edafb0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kln3Hxe8gFwKIzjxZrnBCh6VjnNek9fB\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '__tawkuuid=e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt+DBdn39YP3csb::2; _csrf=dcf38661e6f3cb338325ae19b6fa3833f548b130ac3a5fd9ae09b8c368edafb0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kln3Hxe8gFwKIzjxZrnBCh6VjnNek9fB%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '51414'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-by-nik'
+    'REDIRECT_QUERY_STRING' => 'jni'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'jni'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-by-nik?jni'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544406777.31
+    'REQUEST_TIME' => 1544406777
+]
+2018-12-10 01:53:16 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: id_pemesanan in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php:132
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(132): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/k...', 132, Array)
+#1 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewByNik('140201291196000...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-by-nik', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-10 01:53:16 [::1][-][-][info][application] $_GET = [
+    'nik' => '1402012911960001'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__tawkuuid' => 'e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt DBdn39YP3csb::2'
+    '_csrf' => 'dcf38661e6f3cb338325ae19b6fa3833f548b130ac3a5fd9ae09b8c368edafb0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kln3Hxe8gFwKIzjxZrnBCh6VjnNek9fB\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '__tawkuuid=e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt+DBdn39YP3csb::2; _csrf=dcf38661e6f3cb338325ae19b6fa3833f548b130ac3a5fd9ae09b8c368edafb0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kln3Hxe8gFwKIzjxZrnBCh6VjnNek9fB%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '51492'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-by-nik'
+    'REDIRECT_QUERY_STRING' => 'nik=1402012911960001'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'nik=1402012911960001'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-by-nik?nik=1402012911960001'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544406796.551
+    'REQUEST_TIME' => 1544406796
+]
+2018-12-10 01:54:34 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/pemesanan/view-by-nik-and-proses in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-by-nik-and...', Array)
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#2 {main}
+2018-12-10 01:54:34 [::1][-][-][info][application] $_GET = [
+    'nik' => '1402012911960001'
+    'proses' => 'Dibayar'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__tawkuuid' => 'e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt DBdn39YP3csb::2'
+    '_csrf' => 'dcf38661e6f3cb338325ae19b6fa3833f548b130ac3a5fd9ae09b8c368edafb0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kln3Hxe8gFwKIzjxZrnBCh6VjnNek9fB\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '__tawkuuid=e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt+DBdn39YP3csb::2; _csrf=dcf38661e6f3cb338325ae19b6fa3833f548b130ac3a5fd9ae09b8c368edafb0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kln3Hxe8gFwKIzjxZrnBCh6VjnNek9fB%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '51804'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-by-nik-and-proses'
+    'REDIRECT_QUERY_STRING' => 'nik=1402012911960001&proses=Dibayar'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'nik=1402012911960001&proses=Dibayar'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-by-nik-and-proses?nik=1402012911960001&proses=Dibayar'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544406874.043
+    'REQUEST_TIME' => 1544406874
+]
+2018-12-10 01:57:10 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/pemesanan/view-all-by-id_teknisi in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id_...', Array)
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#2 {main}
+2018-12-10 01:57:10 [::1][-][-][info][application] $_GET = [
+    'id_teknisi' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__tawkuuid' => 'e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt DBdn39YP3csb::2'
+    '_csrf' => 'dcf38661e6f3cb338325ae19b6fa3833f548b130ac3a5fd9ae09b8c368edafb0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kln3Hxe8gFwKIzjxZrnBCh6VjnNek9fB\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '__tawkuuid=e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt+DBdn39YP3csb::2; _csrf=dcf38661e6f3cb338325ae19b6fa3833f548b130ac3a5fd9ae09b8c368edafb0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kln3Hxe8gFwKIzjxZrnBCh6VjnNek9fB%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '52436'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id_teknisi'
+    'REDIRECT_QUERY_STRING' => 'id_teknisi=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id_teknisi=2'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id_teknisi?id_teknisi=2'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544407030.802
+    'REQUEST_TIME' => 1544407030
+]
+2018-12-10 05:20:43 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: app\models\Pemesanan::getmasyarakat() in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1236): yii\base\Component->__call('getmasyarakat', Array)
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(177): yii\db\BaseActiveRecord->getRelation('masyarakat')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(144): yii\db\ActiveQuery->normalizeRelations(Object(app\models\Pemesanan), Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(212): yii\db\ActiveQuery->findWith(Array, Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(238): yii\db\ActiveQuery->populate(Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(151): yii\db\ActiveQuery->all()
+#7 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewAllByIdTeknisi('2')
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id-...', Array)
+#11 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#12 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#14 {main}
+
+Next yii\base\InvalidArgumentException: app\models\Pemesanan has no relation named "masyarakat". in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1239
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(177): yii\db\BaseActiveRecord->getRelation('masyarakat')
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(144): yii\db\ActiveQuery->normalizeRelations(Object(app\models\Pemesanan), Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(212): yii\db\ActiveQuery->findWith(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(238): yii\db\ActiveQuery->populate(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(151): yii\db\ActiveQuery->all()
+#6 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewAllByIdTeknisi('2')
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id-...', Array)
+#10 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#11 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#13 {main}
+2018-12-10 05:20:43 [::1][-][-][info][application] $_GET = [
+    'id_teknisi' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__tawkuuid' => 'e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt DBdn39YP3csb::2'
+    '_csrf' => '4e8ef0b0bdc95a3bed9883af8778d5cadb8a4b52d3193755b94efa34d5779aafa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1VhKRLRbszf7rLg4ho34hUKDTgZ1SNXH\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '__tawkuuid=e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt+DBdn39YP3csb::2; _csrf=4e8ef0b0bdc95a3bed9883af8778d5cadb8a4b52d3193755b94efa34d5779aafa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221VhKRLRbszf7rLg4ho34hUKDTgZ1SNXH%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '44152'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id-teknisi'
+    'REDIRECT_QUERY_STRING' => 'id_teknisi=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id_teknisi=2'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id-teknisi?id_teknisi=2'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544419243.345
+    'REQUEST_TIME' => 1544419243
+]
+2018-12-10 05:21:46 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: app\models\Masyarakat::getnama() in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1236): yii\base\Component->__call('getnama', Array)
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(177): yii\db\BaseActiveRecord->getRelation('nama')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(144): yii\db\ActiveQuery->normalizeRelations(Object(app\models\Masyarakat), Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(212): yii\db\ActiveQuery->findWith(Array, Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(238): yii\db\ActiveQuery->populate(Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveRelationTrait.php(268): yii\db\ActiveQuery->all()
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(151): yii\db\ActiveQuery->populateRelation('nik0', Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(212): yii\db\ActiveQuery->findWith(Array, Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(238): yii\db\ActiveQuery->populate(Array)
+#10 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#11 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(151): yii\db\ActiveQuery->all()
+#12 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewAllByIdTeknisi('2')
+#13 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id-...', Array)
+#16 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#17 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#19 {main}
+
+Next yii\base\InvalidArgumentException: app\models\Masyarakat has no relation named "nama". in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1239
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(177): yii\db\BaseActiveRecord->getRelation('nama')
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(144): yii\db\ActiveQuery->normalizeRelations(Object(app\models\Masyarakat), Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(212): yii\db\ActiveQuery->findWith(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(238): yii\db\ActiveQuery->populate(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveRelationTrait.php(268): yii\db\ActiveQuery->all()
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(151): yii\db\ActiveQuery->populateRelation('nik0', Array)
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(212): yii\db\ActiveQuery->findWith(Array, Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(238): yii\db\ActiveQuery->populate(Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(151): yii\db\ActiveQuery->all()
+#11 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewAllByIdTeknisi('2')
+#12 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id-...', Array)
+#15 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#16 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#18 {main}
+2018-12-10 05:21:46 [::1][-][-][info][application] $_GET = [
+    'id_teknisi' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__tawkuuid' => 'e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt DBdn39YP3csb::2'
+    '_csrf' => '4e8ef0b0bdc95a3bed9883af8778d5cadb8a4b52d3193755b94efa34d5779aafa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1VhKRLRbszf7rLg4ho34hUKDTgZ1SNXH\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '__tawkuuid=e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt+DBdn39YP3csb::2; _csrf=4e8ef0b0bdc95a3bed9883af8778d5cadb8a4b52d3193755b94efa34d5779aafa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221VhKRLRbszf7rLg4ho34hUKDTgZ1SNXH%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '44420'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id-teknisi'
+    'REDIRECT_QUERY_STRING' => 'id_teknisi=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id_teknisi=2'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id-teknisi?id_teknisi=2'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544419306.797
+    'REQUEST_TIME' => 1544419306
+]
+2018-12-10 05:22:27 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nik0.nama' in 'field list' in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `nik0`.`...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(152): yii\db\ActiveQuery->all()
+#6 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewAllByIdTeknisi('2')
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id-...', Array)
+#10 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#11 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nik0.nama' in 'field list'
+The SQL being executed was: SELECT `nik0`.`nama` FROM `tb_pemesanan` WHERE `id_teknisi`='2' ORDER BY `created_at` DESC in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `nik0`.`...')
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `nik0`.`...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(152): yii\db\ActiveQuery->all()
+#6 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewAllByIdTeknisi('2')
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id-...', Array)
+#10 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#11 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'nik0.nama' in 'field list'
+)
+
+2018-12-10 05:22:27 [::1][-][-][info][application] $_GET = [
+    'id_teknisi' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__tawkuuid' => 'e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt DBdn39YP3csb::2'
+    '_csrf' => '4e8ef0b0bdc95a3bed9883af8778d5cadb8a4b52d3193755b94efa34d5779aafa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1VhKRLRbszf7rLg4ho34hUKDTgZ1SNXH\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '__tawkuuid=e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt+DBdn39YP3csb::2; _csrf=4e8ef0b0bdc95a3bed9883af8778d5cadb8a4b52d3193755b94efa34d5779aafa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221VhKRLRbszf7rLg4ho34hUKDTgZ1SNXH%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '44594'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id-teknisi'
+    'REDIRECT_QUERY_STRING' => 'id_teknisi=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id_teknisi=2'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id-teknisi?id_teknisi=2'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544419347.775
+    'REQUEST_TIME' => 1544419347
+]
+2018-12-10 05:22:35 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'masyarakat.nama' in 'field list' in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `masyara...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(152): yii\db\ActiveQuery->all()
+#6 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewAllByIdTeknisi('2')
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id-...', Array)
+#10 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#11 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'masyarakat.nama' in 'field list'
+The SQL being executed was: SELECT `masyarakat`.`nama` FROM `tb_pemesanan` WHERE `id_teknisi`='2' ORDER BY `created_at` DESC in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `masyara...')
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `masyara...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(152): yii\db\ActiveQuery->all()
+#6 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewAllByIdTeknisi('2')
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id-...', Array)
+#10 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#11 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'masyarakat.nama' in 'field list'
+)
+
+2018-12-10 05:22:35 [::1][-][-][info][application] $_GET = [
+    'id_teknisi' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__tawkuuid' => 'e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt DBdn39YP3csb::2'
+    '_csrf' => '4e8ef0b0bdc95a3bed9883af8778d5cadb8a4b52d3193755b94efa34d5779aafa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1VhKRLRbszf7rLg4ho34hUKDTgZ1SNXH\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '__tawkuuid=e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt+DBdn39YP3csb::2; _csrf=4e8ef0b0bdc95a3bed9883af8778d5cadb8a4b52d3193755b94efa34d5779aafa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221VhKRLRbszf7rLg4ho34hUKDTgZ1SNXH%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '44596'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id-teknisi'
+    'REDIRECT_QUERY_STRING' => 'id_teknisi=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id_teknisi=2'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id-teknisi?id_teknisi=2'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544419355.758
+    'REQUEST_TIME' => 1544419355
+]
+2018-12-10 05:22:41 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tb_masyarakat.nama' in 'field list' in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `tb_masy...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(152): yii\db\ActiveQuery->all()
+#6 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewAllByIdTeknisi('2')
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id-...', Array)
+#10 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#11 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tb_masyarakat.nama' in 'field list'
+The SQL being executed was: SELECT `tb_masyarakat`.`nama` FROM `tb_pemesanan` WHERE `id_teknisi`='2' ORDER BY `created_at` DESC in /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `tb_masy...')
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `tb_masy...')
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/PemesananController.php(152): yii\db\ActiveQuery->all()
+#6 [internal function]: app\api\modules\v1\controllers\PemesananController->actionViewAllByIdTeknisi('2')
+#7 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view-all-by-id-...', Array)
+#10 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/pemesanan/vi...', Array)
+#11 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'tb_masyarakat.nama' in 'field list'
+)
+
+2018-12-10 05:22:41 [::1][-][-][info][application] $_GET = [
+    'id_teknisi' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '__tawkuuid' => 'e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt DBdn39YP3csb::2'
+    '_csrf' => '4e8ef0b0bdc95a3bed9883af8778d5cadb8a4b52d3193755b94efa34d5779aafa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1VhKRLRbszf7rLg4ho34hUKDTgZ1SNXH\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '__tawkuuid=e::localhost::l4BkwPDe27eNW4AadBNLjaH0GUOrNbvcyRdxQVtFjEpJx53ymYt+DBdn39YP3csb::2; _csrf=4e8ef0b0bdc95a3bed9883af8778d5cadb8a4b52d3193755b94efa34d5779aafa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221VhKRLRbszf7rLg4ho34hUKDTgZ1SNXH%22%3B%7D; TawkConnectionTime=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '44632'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id-teknisi'
+    'REDIRECT_QUERY_STRING' => 'id_teknisi=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id_teknisi=2'
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/pemesanan/view-all-by-id-teknisi?id_teknisi=2'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544419361.085
+    'REQUEST_TIME' => 1544419361
+]
+2018-12-10 06:17:24 [::1][-][-][error][Error] Error: Class 'app\api\modules\v1\controllers\Topup' not found in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/TopupController.php:18
+Stack trace:
+#0 [internal function]: app\api\modules\v1\controllers\TopupController->actionAdd()
+#1 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('add', Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/topup/add', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#7 {main}
+2018-12-10 06:17:24 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'nik' => '1402012911960001'
+    'nominal' => '300000'
+    'foto' => '1402012911960001_2018_12_10_16_13.jpg'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'f6fa6995-4298-4665-b2c5-f9ba3afa621a'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '78'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '59686'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/topup/add'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/topup/add'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544422644.612
+    'REQUEST_TIME' => 1544422644
+]
+2018-12-10 06:18:12 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: nominal in /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/TopupController.php:25
+Stack trace:
+#0 /var/www/html/karir-ta-orang/udin-smart-service/api/modules/v1/controllers/TopupController.php(25): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/k...', 25, Array)
+#1 [internal function]: app\api\modules\v1\controllers\TopupController->actionAdd()
+#2 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('add', Array)
+#5 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/topup/add', Array)
+#6 /var/www/html/karir-ta-orang/udin-smart-service/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/karir-ta-orang/udin-smart-service/api/index.php(20): yii\base\Application->run()
+#8 {main}
+2018-12-10 06:18:12 [::1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'nik' => '1402012911960001'
+    'nominal' => '300000'
+    'foto' => '1402012911960001_2018_12_10_16_13.jpg'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'af4ebecd-55fb-4e38-940d-17d97220aafe'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.4.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_LENGTH' => '78'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/karir-ta-orang/udin-smart-service/api/index.php'
+    'REMOTE_PORT' => '59886'
+    'REDIRECT_URL' => '/karir-ta-orang/udin-smart-service/api/v1/topup/add'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/karir-ta-orang/udin-smart-service/api/v1/topup/add'
+    'SCRIPT_NAME' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'PHP_SELF' => '/karir-ta-orang/udin-smart-service/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1544422692.135
+    'REQUEST_TIME' => 1544422692
+]
