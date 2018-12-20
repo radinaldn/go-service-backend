@@ -10,38 +10,53 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to login:</p>
 
-    <?php $form = ActiveForm::begin([
-        'id' => 'login-form',
-        'layout' => 'horizontal',
-        'fieldConfig' => [
-            'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
-            'labelOptions' => ['class' => 'col-lg-1 control-label'],
-        ],
-    ]); ?>
-
-        <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
-
-        <?= $form->field($model, 'password')->passwordInput() ?>
-
-        <?= $form->field($model, 'rememberMe')->checkbox([
-            'template' => "<div class=\"col-lg-offset-1 col-lg-3\">{input} {label}</div>\n<div class=\"col-lg-8\">{error}</div>",
-        ]) ?>
-
-        <div class="form-group">
-            <div class="col-lg-offset-1 col-lg-11">
-                <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+        <!-- Login -->
+        <div class="nk-block toggled" id="l-login">
+            <div class="nk-form">
+            <img style="height: 150px" src="<?= Yii::$app->homeUrl ?>custom/img/logo/logo.png"  alt="" />
+            <br>
+            <br>
+            <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+                <div class="input-group">
+                    <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-support"></i></span>
+                    <div class="nk-int-st">
+                        <!-- <input type="text" class="form-control" placeholder="Username"> -->
+                        <?= $form
+                ->field($model, 'username')
+                ->label(false)
+                ->textInput(['placeholder' => $model->getAttributeLabel('username')]) ?>
+                    </div>
+                </div>
+                <div class="input-group mg-t-15">
+                    <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-edit"></i></span>
+                    <div class="nk-int-st">
+                        <!-- <input type="password" class="form-control" placeholder="Password"> -->
+                        <?= $form
+                ->field($model, 'password')
+                ->label(false)
+                ->passwordInput(['placeholder' => $model->getAttributeLabel('password')]) ?>
+                    </div>
+                </div>
+                <div class="fm-checkbox">
+                    <label><input type="checkbox" class="i-checks"> <i></i> Keep me signed in</label>
+                    <br>
+                    <?= Html::submitButton('LOGIN', ['class'=>['btn btn-primary btn-bordred col-xs-12'], 'name' => 'login-button']) ?>
+                    <div class="form-group">
+                
             </div>
+                </div>
+                <a href="#l-register" data-ma-action="nk-login-switch" data-ma-block="#" class="btn btn-login btn-success btn-float"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></a>
+            </div>
+
+            <div class="nk-navigation nk-lg-ic">
+                
+                <a href="#" data-ma-action="nk-login-switch" data-ma-block="#l-forget-password"><i>?</i> <span>Forgot Password</span></a>
+            </div>
+            <?php ActiveForm::end(); ?>
         </div>
 
-    <?php ActiveForm::end(); ?>
-
-    <div class="col-lg-offset-1" style="color:#999;">
-        You may login with <strong>admin/admin</strong> or <strong>demo/demo</strong>.<br>
-        To modify the username/password, please check out the code <code>app\models\User::$users</code>.
-    </div>
-</div>
+        
+        
+    

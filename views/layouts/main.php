@@ -123,7 +123,7 @@ AppAsset::register($this);
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item nc-al"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-alarm"></i></span><div class="spinner4 spinner-4"></div><div class="ntd-ctn"><span>3</span></div></a>
+                            
                                 <div role="menu" class="dropdown-menu message-dd notification-dd animated zoomIn">
                                     <div class="hd-mg-tt">
                                         <h2>Notification</h2>
@@ -426,7 +426,7 @@ AppAsset::register($this);
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-                        <li class="active"><a href="<?= Url::to(['index']) ?>"><i class="notika-icon notika-house"></i> Home</a>
+                        <li class="active"><a href="<?php echo Yii::$app->homeUrl ?>"><i class="notika-icon notika-house"></i> Home</a>
                         </li>
                         <li><a href="<?= Url::to(['masyarakat/index']) ?>"><i class="notika-icon notika-mail"></i> Masyarakat</a>
                         </li>
