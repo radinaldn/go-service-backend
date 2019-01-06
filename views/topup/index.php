@@ -91,8 +91,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id_topup',
+            // 'id_topup',
             'nik',
+            'nik0.nama',
             'nominal',
             'created_at',
             // 'updated_at',
@@ -112,15 +113,32 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
             ],
             [
+                'label'=>'Foto',
+                'format'=>'raw',
+                'value' => function($data){
+                    $url = Yii::$app->getHomeUrl()."/files/topup/".$data['foto'];
+                    return Html::img($url,['alt'=>'404', 'class'=>'user-img', 'height'=>'100', 'width'=>'100', 'style'=>'object-fit: cover']);
+                }
+            ],
+            [
                 'format'=>'html',
                 'attribute'=>'text',
                 'label'=>'Aksi',
                 'value'=>function($data){
+                   if ($data->proses == "Diterima"){
+                    return Html::decode(Html::decode('
+                    <a title="Tolak Topup" href="'.Url::to(['topup/tolak?id=']).$data->id_topup.'"><span class=" btn btn-danger btn-xs"><i class="fa fa-times"></i> </span></a> '));
+                   } else if ($data->proses == "Ditolak") {
+                    return Html::decode(Html::decode('
+                    <a title="Terima Topup" href="'.Url::to(['topup/terima?id=']).$data->id_topup.'"><span class=" btn btn-success btn-xs"><i class="fa fa-check"></i> </span></a> '));
+                   } else {
                     return Html::decode(Html::decode('
                     <a title="Terima Topup" href="'.Url::to(['topup/terima?id=']).$data->id_topup.'"><span class=" btn btn-success btn-xs"><i class="fa fa-check"></i> </span></a> 
                     <a title="Tolak Topup" href="'.Url::to(['topup/tolak?id=']).$data->id_topup.'"><span class=" btn btn-danger btn-xs"><i class="fa fa-times"></i> </span></a> '));
+                   }
                 },
             ],
+            
 
             // ['class' => 'yii\grid\ActionColumn'],
         ],

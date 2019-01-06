@@ -33,4 +33,20 @@ class TopupController extends Controller{
 
         return $response;
     }
+
+    public function actionViewAllByNik($nik){
+        Yii::$app->response->format = Response::FORMAT_JSON;
+        $response = null;
+
+        if(Yii::$app->request->isGet){
+            $sql = "SELECT tb_topup.*, tb_masyarakat.*, tb_topup.created_at, tb_topup.foto FROM tb_topup INNER JOIN tb_masyarakat
+            WHERE tb_topup.nik = tb_masyarakat.nik
+            AND tb_topup.nik = '$nik' 
+            ORDER BY tb_topup.created_at DESC";
+
+            $response['master'] = Yii::$app->db->createCommand($sql)->queryAll();
+        }
+
+        return $response;
+    }
 }

@@ -42,9 +42,27 @@ $this->params['breadcrumbs'][] = $this->title;
             'biaya',
             'proses',
             'kategori_bayar',
-            'foto_sebelum',
-            'foto_sesudah',
+            //'foto_sebelum',
+            [
+                'label'=>'Foto Sebelum',
+                'format'=>'raw',
+                'value' => function($data){
+                    $url = Yii::$app->getHomeUrl()."/files/foto-pemesanan/".$data['foto_sebelum'];
+                    return Html::img($url,['alt'=>'404', 'class'=>'user-img', 'height'=>'300', 'width'=>'300', 'style'=>'object-fit: cover']);
+                }
+            ],
+            //'foto_sesudah',
+            [
+                'label'=>'Foto Sesudah',
+                'format'=>'raw',
+                'value' => function($data){
+                    $url = Yii::$app->getHomeUrl()."/files/foto-pemesanan/".$data['foto_sesudah'];
+                    return Html::img($url,['alt'=>'404', 'class'=>'user-img', 'height'=>'300', 'width'=>'300', 'style'=>'object-fit: cover']);
+                }
+            ],
             'ket:ntext',
+            'rating',
+            'komentar_rating:ntext',
         ],
     ]) ?>
 

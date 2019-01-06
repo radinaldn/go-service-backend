@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use app\models\Topup;
+use app\models\Masyarakat;
 use app\models\TopupSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -81,14 +82,46 @@ class TopupController extends Controller
         
         $model = Topup::find()->where(['id_topup' => $id])->one();
         $model->proses = "Diterima";
+
+        // tambah nilai saldo
+        $masyarakat = Masyarakat::find()->where(['nik' => $model->nik])->one();
+        $masyarakat->saldo += $model->nominal;
+        // echo "<pre>";
+        // var_dump($masyarakat);
+        // exit();
         
 
-        if ($model->save()) {
-            Yii::$app->session->setFlash('success', "Request Topup <b>ID #".$model->id_topup."<b> berhasil diterima.");
+        if ($model->save() && $masyarakat->update()) {
+
+            // send push notif to masyaraakt
+            $title = "Topup Diterima";
+            $body = "Saldo Rp".$model->nominal." ditambahkan.";
+            TopupController::sendPushNotifToMasyarakat($masyarakat->nik, $title, $body);
+
+            Yii::$app->session->setFlash('success', "Request Topup <b>ID #".$model->id_topup."</b> berhasil diterima.");
             return $this->redirect(['index']);
         }
 
-        Yii::$app->session->setFlash('failed', "Request Topup <b>ID #".$model->id_topup."<b> gagal diterima.");
+        Yii::$app->session->setFlash('failed', "Request Topup <b>ID #".$model->id_topup."</b> gagal diterima.");
+        return $this->redirect(['index']);
+
+        
+    }
+
+    // action tolak topup
+    public function actionTolak($id){
+        
+        
+        $model = Topup::find()->where(['id_topup' => $id])->one();
+        $model->proses = "Ditolak";
+        
+
+        if ($model->save()) {
+            Yii::$app->session->setFlash('success', "Request Topup <b>ID #".$model->id_topup."</b> berhasil ditolak.");
+            return $this->redirect(['index']);
+        }
+
+        Yii::$app->session->setFlash('failed', "Request Topup <b>ID #".$model->id_topup."</b> gagal diterima.");
         return $this->redirect(['index']);
 
         
@@ -142,5 +175,39 @@ class TopupController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    public static function sendPushNotifToMasyarakat($nik, $title, $body){
+        $pushNotifications = new \Pusher\PushNotifications\PushNotifications(array(
+            "instanceId" => "825913f1-e596-46cd-a0b8-22d2b6535c3d",
+            "secretKey" => "39E2D6ED04F7B5B008D95228D503237F6B3CB96BE3862D4BF16AE31F30D44289",
+          ));
+
+          $publishResponse = $pushNotifications->publish(
+            // array("hello", "donuts"),
+            array(strval($nik)),
+            array(
+              "fcm" => array(
+                "notification" => array(
+                  "title" => $title,
+                  "body" => $body,
+                  "sound" => "default",
+                  "click_action" => "ACTIVITY_SALDO"
+                )
+              ),
+              "data" => array(
+                "inAppNotificationMessage" => "Display me somewhere in the app ui!",
+              ),
+            //   "apns" => array("aps" => array(
+            //     "alert" => array(
+            //       "title" => "Hi!",
+            //       "body" => "This is my first Push Notification!"
+            //     )
+            //   ))
+          ));
+
+        //   echo "<pre>";
+        //   var_dump($publishResponse);
+        //   exit();
     }
 }

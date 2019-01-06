@@ -8,6 +8,28 @@ use yii\web\Response;
 
 class MasyarakatController extends Controller{
 
+    public function actionViewSaldo($nik){
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        $response = null;
+
+        if (Yii::$app->request->isGet){
+            $masyarakat = Masyarakat::find()->where(['nik' => $nik])->one();
+            
+            if (isset($masyarakat)){
+                $response['code'] = 200;
+                $response['message'] = "User ditemukan!";
+                $response['saldo'] = $masyarakat->saldo;
+            } else {
+                $response['code'] = 500;
+                $response['message'] = "User tidak ditemukan!";
+                $response['saldo'] = null;
+            }
+        }
+
+        return $response;
+    }
+
     public function actionLogin(){
         Yii::$app->response->format = Response::FORMAT_JSON;
 

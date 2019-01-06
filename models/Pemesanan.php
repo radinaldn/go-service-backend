@@ -43,8 +43,8 @@ class Pemesanan extends \yii\db\ActiveRecord
     {
         return [
             [['nik', 'id_teknisi', 'alamat', 'lat', 'lng', 'jenis_servis', 'kategori_bayar', 'foto_sebelum', 'keluhan'], 'required'],
-            [['id_teknisi', 'biaya'], 'integer'],
-            [['alamat', 'proses', 'kategori_bayar', 'ket', 'keluhan'], 'string'],
+            [['id_teknisi', 'biaya', 'rating'], 'integer'],
+            [['alamat', 'proses', 'kategori_bayar', 'ket', 'keluhan', 'komentar_rating'], 'string'],
             [['lat', 'lng'], 'number'],
             [['created_at', 'updated_at'], 'safe'],
             [['nik'], 'string', 'max' => 16],
@@ -76,6 +76,8 @@ class Pemesanan extends \yii\db\ActiveRecord
             'foto_sebelum' => 'Foto Sebelum',
             'foto_sesudah' => 'Foto Sesudah',
             'ket' => 'Ket',
+            'rating' => 'Rating',
+            'komentar_rating' => 'Komentar Rating',
         ];
     }
 

@@ -42,7 +42,7 @@ class Teknisi extends \yii\db\ActiveRecord
         return [
             [['nama_toko', 'nama_pemilik', 'nik_pemilik', 'layanan', 'alamat', 'no_hp', 'lat', 'lng', 'siu', 'foto', 'password'], 'required'],
             [['layanan', 'alamat', 'status_akun', 'password'], 'string'],
-            [['lat', 'lng', 'saldo'], 'number'],
+            [['lat', 'lng', 'saldo', 'total_rating', 'jumlah_pemesanan'], 'number'],
             [['created_at', 'updated_at'], 'safe'],
             [['nama_toko', 'nama_pemilik'], 'string', 'max' => 150],
             [['nik_pemilik'], 'string', 'max' => 16],
@@ -71,6 +71,8 @@ class Teknisi extends \yii\db\ActiveRecord
             'foto' => 'Foto',
             'status_akun' => 'Status Akun',
             'saldo' => 'Saldo',
+            'total_rating' => 'Total Rating',
+            'jumlah_pemesanan' => 'Jumlah Pemesanan',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];

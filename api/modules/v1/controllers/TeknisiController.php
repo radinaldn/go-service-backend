@@ -16,7 +16,7 @@ class TeknisiController extends Controller{
         if (Yii::$app->request->isPost){
             $data = Yii::$app->request->post();
 
-            $email = $data['email'];
+            $email = $data['nik'];
             $password = sha1($data['password']);
 
             $teknisi = Teknisi::find()->where(['email' => $email])
@@ -81,7 +81,7 @@ class TeknisiController extends Controller{
         $response = null;
 
         if(Yii::$app->request->isGet){
-            $sql = "SELECT tb_teknisi.id_teknisi, tb_teknisi.email, tb_teknisi.nama_toko, tb_teknisi.nama_pemilik, tb_teknisi.nik_pemilik, tb_teknisi.layanan, tb_teknisi.alamat, tb_teknisi.no_hp, tb_teknisi.lat, tb_teknisi.lng, tb_teknisi.foto, tb_teknisi.status_akun,
+            $sql = "SELECT tb_teknisi.id_teknisi, tb_teknisi.email, tb_teknisi.nama_toko, tb_teknisi.nama_pemilik, tb_teknisi.nik_pemilik, tb_teknisi.layanan, tb_teknisi.alamat, tb_teknisi.no_hp, tb_teknisi.lat, tb_teknisi.lng, tb_teknisi.foto, tb_teknisi.status_akun, tb_teknisi.total_rating, tb_teknisi.jumlah_pemesanan,
                     (((acos(sin(('$myLat'*pi()/180)) 
                     * sin((`lat`*pi()/180))+cos(('$myLat'*pi()/180)) 
                     * cos((`lat`*pi()/180)) * cos((('$myLng'- `lng`) 
@@ -95,4 +95,26 @@ class TeknisiController extends Controller{
 
         return $response;
     }    
+
+    public function actionViewSaldo($id_teknisi){
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        $response = null;
+
+        if (Yii::$app->request->isGet){
+            $teknisi = Teknisi::find()->where(['id_teknisi' => $id_teknisi])->one();
+            
+            if (isset($teknisi)){
+                $response['code'] = 200;
+                $response['message'] = "Teknisi ditemukan!";
+                $response['saldo'] = $teknisi->saldo;
+            } else {
+                $response['code'] = 500;
+                $response['message'] = "Teknisi tidak ditemukan!";
+                $response['saldo'] = null;
+            }
+        }
+
+        return $response;
+    }
 }
