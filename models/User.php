@@ -53,7 +53,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     public function findByUsername($username){
 
         $user = User::find()->where([User::username=>$username])->one();
-        if (count($user)){
+        if (sizeof($user)>0){
             return new static($user);
         }
 
@@ -77,7 +77,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     {
         // TODO: Implement findIdentity() method.
         $user = User::findOne($username);
-        if(count($user)){
+        if(sizeof($user)>0){
             return new static($user);
         }
         return null;
