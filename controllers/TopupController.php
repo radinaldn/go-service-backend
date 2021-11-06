@@ -96,7 +96,9 @@ class TopupController extends Controller
             // send push notif to masyaraakt
             $title = "Topup Diterima";
             $body = "Saldo Rp".$model->nominal." ditambahkan.";
-            TopupController::sendPushNotifToMasyarakat($masyarakat->nik, $title, $body);
+            
+            // Deprecated
+//             TopupController::sendPushNotifToMasyarakat($masyarakat->nik, $title, $body);
 
             Yii::$app->session->setFlash('success', "Request Topup <b>ID #".$model->id_topup."</b> berhasil diterima.");
             return $this->redirect(['index']);
