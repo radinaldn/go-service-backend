@@ -99,10 +99,10 @@ class SiteController extends Controller
             'totalTeknisi'=>$teknisi,
             'totalTopupDiproses'=>$topup,
             'nominalTopup'=>$nominalTopupConverted ,
-            'cpuUsage'=>SiteController::get_server_cpu_usage(),
-            'memoryUsage'=>SiteController::get_server_memory_usage(),
-            'diskUsage'=>SiteController::get_disk_usage(),
-            'numberProcess'=>SiteController::get_number_processes(),
+            'cpuUsage'=>0,
+            'memoryUsage'=>0,
+            'diskUsage'=>0,
+            'numberProcess'=>0,
             'bulanKini'=>$bulanKini
         ]);
     }
