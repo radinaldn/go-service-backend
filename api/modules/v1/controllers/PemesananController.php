@@ -35,7 +35,7 @@ class PemesananController extends Controller{
                 // send push notif to teknisi
                 $title = "Pesanan Diproses";
                 $body = "Berhasil menerima pesanan ";
-                PemesananController::sendPushNotifToTeknisi($pemesanan->id_teknisi, $title, $body);
+//                 PemesananController::sendPushNotifToTeknisi($pemesanan->id_teknisi, $title, $body);
 
                 $response['code'] = 200;
                 $response['message'] = "Pesanan berhasil dikirim!";
@@ -278,7 +278,7 @@ class PemesananController extends Controller{
                                 // send push notif to teknisi
                                 $title = "Pesanan Dibayar";
                                 $body = "Anda menerima Rp".$pemesanan->biaya;
-                                PemesananController::sendPushNotifToTeknisi($pemesanan->id_teknisi, $title, $body);
+//                                 PemesananController::sendPushNotifToTeknisi($pemesanan->id_teknisi, $title, $body);
 
                                 // proses bayar dengan saldo sukses
                                 $response['code'] = 200;
@@ -348,7 +348,7 @@ class PemesananController extends Controller{
                 // send push notif to masyarakat
                 $title = "Pesanan ".$pemesanan->proses;
                 $body = "Harap bayar Rp".$pemesanan->biaya." (".$pemesanan->kategori_bayar.")";
-                PemesananController::sendPushNotifToMasyarakat($pemesanan->nik, $title, $body);
+//                 PemesananController::sendPushNotifToMasyarakat($pemesanan->nik, $title, $body);
 
 
                 $response['code'] = 200;
